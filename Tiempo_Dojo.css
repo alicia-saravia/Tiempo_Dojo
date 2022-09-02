@@ -1,0 +1,128 @@
+.conteiner-principal{
+    width: 100%;
+    height: 1000px;
+    background-color: white;
+    margin: 30px auto;
+    border: 3px solid gray;
+}
+
+.tiempo-dojo{
+    height: 100px;
+    width: 100%;
+    background-color:rgb(172, 185, 240);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.barra-navegacion {
+    width: 50%;
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+
+.barra-navegacion li {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.barra-navegacion a {
+    text-decoration: none;
+}
+
+.title {
+    padding-left: 20px;
+}
+
+.pronostico {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-pronostico {
+    padding-left: 50px;
+    text-align: left;
+}
+
+.ciudades {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    border-bottom: 2px solid black;
+}
+
+.ciudad {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.temperatura {
+    font-size: large;
+    font-weight: bold;
+}
+
+.semana {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.hoy, .manana, .viernes, .sabado {
+    flex: 1;
+    background-color: rgb(229, 235, 235);
+    width: 50px;
+    text-align: center;
+    margin-right: 20px;
+
+}
+
+.imagenes-clima{
+    width: 80px;
+    border-radius: 50%;
+}
+
+.detener-tiempo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 3px solid black;
+    
+}
+
+footer{
+    display: table;
+    text-align: center;
+    width: 90%;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -45%;
+
+}
+
+.imagen-footer{
+    float: left;
+    margin-right: 15px;
+}
+
+.button{
+    background-color: rgb(125, 169, 246);
+    color: black;
+    border: 2px solid;
+    padding: 10px 28px;
+    cursor: pointer;
+    margin-right: 30px;
+}

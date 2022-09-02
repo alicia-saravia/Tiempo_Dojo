@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Tiempo_Dojo.css">
+    <title>Tiempo Dojo</title>
+</head>
+<body>
+    <div class="conteiner-principal">
+        <header class="tiempo-dojo">
+            <h1 class="title">DojoWeather</h1>
+            <ul class="barra-navegacion">
+                <li><a href="http://" onclick="return cargando()">Burbank</a></li>
+                <li><a href="http://" onclick="return cargando()">Chicago</a></li>
+                <li><a href="http://" onclick="return cargando()">Dallas</a></li>
+            </ul>
+        </header>
+
+        <main class="pronostico">
+            <div class="ciudades">
+                <h2 class="ciudad">
+                    <span class="title-pronostico">San José</span>
+                    <span class="temperatura">show temperature in 
+                        <select name="unidades" id="unidades" onchange="cambio_unidad()">
+                            <option value="celsius">°C</option>
+                            <option value="farenheit">°F</option>
+                        </select>
+                    </span>
+                </h2>
+            </div>
+            <div class="semana">
+                <div class="hoy">
+                    <p>Today</p>
+                    <img src="assets/some_rain.png" alt="" class="imagenes-clima">
+                    <h5>some rain</h5>
+                    <B><font color="red"><span id="hoy_max">24°</span></font></B> 
+                    <B><font color="navy"><span id="hoy_min">18°</span></font></B></span>
+                    <pre>
+
+
+                    </pre> 
+                </div>
+    
+                <div class="manana">
+                    <p>Tomorrow</p>
+                    <img src="assets/some_sun.png" alt="" class="imagenes-clima">
+                    <h5>some sun</h5>
+                    <B><font color="red"><span id="manana_max">27°</span></font></B>
+                    <B><font color="navy"><span id="manana_min">19°</span></font></B>
+                    <pre>
+
+                        
+                    </pre> 
+                </div>
+    
+                <div class="viernes">
+                    <p>Friday</p>
+                    <img src="assets/some_clouds.png" alt="" class="imagenes-clima">
+                    <h5>some clouds</h5>
+                    <B><font color="red"><span id="viernes_max">21°</span></font></B>
+                    <B><font color="navy"><span id="viernes_min">16°</span></font></B>
+                    <pre>
+
+                        
+                    </pre> 
+                </div>
+    
+                <div class="sabado">
+                    <p>Saturday</p>
+                    <img src="assets/some_sun.png" alt="" class="imagenes-clima">
+                    <h5>some rain</h5>
+                    <B><font color="red"><span id="sabado_max">26°</span></font></B>
+                    <B><font color="navy"><span id="sabado_min">21°</span></font></B>
+                    <pre>
+
+                        
+                    </pre> 
+                </div>
+        </main>
+
+        <footer>
+                <div class="detener-tiempo" id="detener_tiempo">
+                    <img src="assets/cookie.png" alt="" class="imagen-footer">
+                    <h3>Stop! Cookie time</h3>
+                    <p> We use cookies (sadly not the edible ones)to personalize content and ads,
+                        to provid social media features and to analyse our traffic. 
+                        <a href="http://wwww.lea-mas.cl">Read more...</a> 
+                    </p>
+                    <button class="button" onclick="esconder()">I Accept</button>
+                </div>
+        </footer>
+    </div>
+
+    <script src="Tiempo_Dojo.js"></script>
+</body>
+</html>
